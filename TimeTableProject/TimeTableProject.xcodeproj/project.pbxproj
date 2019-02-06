@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E24D582F42F8CFE874F3431 /* Pods_TimeTableProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B8237628C039908CC0ACD /* Pods_TimeTableProject.framework */; };
 		AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */; };
 		AF0EB765220ABDC500DFAFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* ViewController.swift */; };
 		AF0EB768220ABDC500DFAFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB766220ABDC500DFAFC0 /* Main.storyboard */; };
@@ -17,9 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3599A1067F224CA440B432FE /* Pods-TimeTableProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject.debug.xcconfig"; sourceTree = "<group>"; };
-		765A43C3F8AF8CD57807691B /* Pods-TimeTableProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject.release.xcconfig"; sourceTree = "<group>"; };
-		977B8237628C039908CC0ACD /* Pods_TimeTableProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTableProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EB75F220ABDC500DFAFC0 /* TimeTableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF0EB764220ABDC500DFAFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,37 +31,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E24D582F42F8CFE874F3431 /* Pods_TimeTableProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22A60704614610B69C9543DA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				977B8237628C039908CC0ACD /* Pods_TimeTableProject.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		55D2E440A6D2F7EA5E070DEA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3599A1067F224CA440B432FE /* Pods-TimeTableProject.debug.xcconfig */,
-				765A43C3F8AF8CD57807691B /* Pods-TimeTableProject.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AF0EB756220ABDC500DFAFC0 = {
 			isa = PBXGroup;
 			children = (
 				AF0EB761220ABDC500DFAFC0 /* TimeTableProject */,
 				AF0EB760220ABDC500DFAFC0 /* Products */,
-				55D2E440A6D2F7EA5E070DEA /* Pods */,
-				22A60704614610B69C9543DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +74,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0EB774220ABDC600DFAFC0 /* Build configuration list for PBXNativeTarget "TimeTableProject" */;
 			buildPhases = (
-				09DCCE56B9102623E3353A66 /* [CP] Check Pods Manifest.lock */,
 				AF0EB75B220ABDC500DFAFC0 /* Sources */,
 				AF0EB75C220ABDC500DFAFC0 /* Frameworks */,
 				AF0EB75D220ABDC500DFAFC0 /* Resources */,
-				C579E23EB908D43012058AD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,65 +132,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		09DCCE56B9102623E3353A66 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TimeTableProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C579E23EB908D43012058AD7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF0EB75B220ABDC500DFAFC0 /* Sources */ = {
@@ -302,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -369,11 +284,10 @@
 		};
 		AF0EB775220ABDC600DFAFC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3599A1067F224CA440B432FE /* Pods-TimeTableProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 945LG8AYW8;
 				INFOPLIST_FILE = TimeTableProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +295,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.BKandJS.TimeTableProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,11 +302,10 @@
 		};
 		AF0EB776220ABDC600DFAFC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 765A43C3F8AF8CD57807691B /* Pods-TimeTableProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 945LG8AYW8;
 				INFOPLIST_FILE = TimeTableProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,7 +313,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.BKandJS.TimeTableProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
