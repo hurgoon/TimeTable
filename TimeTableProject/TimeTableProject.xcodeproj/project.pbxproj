@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E24D582F42F8CFE874F3431 /* Pods_TimeTableProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B8237628C039908CC0ACD /* Pods_TimeTableProject.framework */; };
 		AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */; };
-		AF0EB765220ABDC500DFAFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* ViewController.swift */; };
+		AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */; };
 		AF0EB768220ABDC500DFAFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB766220ABDC500DFAFC0 /* Main.storyboard */; };
 		AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */; };
 		AF0EB76D220ABDC600DFAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */; };
@@ -22,12 +22,13 @@
 		977B8237628C039908CC0ACD /* Pods_TimeTableProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTableProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EB75F220ABDC500DFAFC0 /* TimeTableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF0EB764220ABDC500DFAFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		AF0EB767220ABDC500DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0EB76A220ABDC500DFAFC0 /* TimeTableProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeTableProject.xcdatamodel; sourceTree = "<group>"; };
 		AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0EB76F220ABDC600DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0EB771220ABDC600DFAFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1EB5CD8B695CA43B37C521 /* Pods-TimeTableProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableProject.release.xcconfig"; path = "Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */,
-				AF0EB764220ABDC500DFAFC0 /* ViewController.swift */,
+				AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */,
 				AF0EB766220ABDC500DFAFC0 /* Main.storyboard */,
 				AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */,
 				AF0EB76E220ABDC600DFAFC0 /* LaunchScreen.storyboard */,
@@ -89,6 +90,14 @@
 				AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */,
 			);
 			path = TimeTableProject;
+			sourceTree = "<group>";
+		};
+		B4B856177BBF08C9DE6AAE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DC1A974D5CAB277D66BC1 /* Pods_TimeTableProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */,
-				AF0EB765220ABDC500DFAFC0 /* ViewController.swift in Sources */,
+				AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */,
 				AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
