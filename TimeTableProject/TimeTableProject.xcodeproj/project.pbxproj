@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C78B04128231DD2CE04CF4 /* Pods_TimeTableProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DC1A974D5CAB277D66BC1 /* Pods_TimeTableProject.framework */; };
 		AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */; };
-		AF0EB765220ABDC500DFAFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* ViewController.swift */; };
+		AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */; };
 		AF0EB768220ABDC500DFAFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB766220ABDC500DFAFC0 /* Main.storyboard */; };
 		AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */; };
 		AF0EB76D220ABDC600DFAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */; };
@@ -16,14 +17,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA7DC1A974D5CAB277D66BC1 /* Pods_TimeTableProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTableProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD25BF76111CB2B7DBAE2978 /* Pods-TimeTableProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableProject.debug.xcconfig"; path = "Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0EB75F220ABDC500DFAFC0 /* TimeTableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF0EB764220ABDC500DFAFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		AF0EB767220ABDC500DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0EB76A220ABDC500DFAFC0 /* TimeTableProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeTableProject.xcdatamodel; sourceTree = "<group>"; };
 		AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0EB76F220ABDC600DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0EB771220ABDC600DFAFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1EB5CD8B695CA43B37C521 /* Pods-TimeTableProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableProject.release.xcconfig"; path = "Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C78B04128231DD2CE04CF4 /* Pods_TimeTableProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CDDB479FD29C32041F66978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD25BF76111CB2B7DBAE2978 /* Pods-TimeTableProject.debug.xcconfig */,
+				DD1EB5CD8B695CA43B37C521 /* Pods-TimeTableProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AF0EB756220ABDC500DFAFC0 = {
 			isa = PBXGroup;
 			children = (
 				AF0EB761220ABDC500DFAFC0 /* TimeTableProject */,
 				AF0EB760220ABDC500DFAFC0 /* Products */,
+				6CDDB479FD29C32041F66978 /* Pods */,
+				B4B856177BBF08C9DE6AAE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */,
-				AF0EB764220ABDC500DFAFC0 /* ViewController.swift */,
+				AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */,
 				AF0EB766220ABDC500DFAFC0 /* Main.storyboard */,
 				AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */,
 				AF0EB76E220ABDC600DFAFC0 /* LaunchScreen.storyboard */,
@@ -67,6 +84,14 @@
 			path = TimeTableProject;
 			sourceTree = "<group>";
 		};
+		B4B856177BBF08C9DE6AAE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA7DC1A974D5CAB277D66BC1 /* Pods_TimeTableProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0EB774220ABDC600DFAFC0 /* Build configuration list for PBXNativeTarget "TimeTableProject" */;
 			buildPhases = (
+				7C1DB4576F7C050C413C2A23 /* [CP] Check Pods Manifest.lock */,
 				AF0EB75B220ABDC500DFAFC0 /* Sources */,
 				AF0EB75C220ABDC500DFAFC0 /* Frameworks */,
 				AF0EB75D220ABDC500DFAFC0 /* Resources */,
+				73642215B75A47BB40B06734 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +160,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73642215B75A47BB40B06734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTableProject/Pods-TimeTableProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1DB4576F7C050C413C2A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeTableProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF0EB75B220ABDC500DFAFC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */,
-				AF0EB765220ABDC500DFAFC0 /* ViewController.swift in Sources */,
+				AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */,
 				AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +358,7 @@
 		};
 		AF0EB775220ABDC600DFAFC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD25BF76111CB2B7DBAE2978 /* Pods-TimeTableProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +377,7 @@
 		};
 		AF0EB776220ABDC600DFAFC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1EB5CD8B695CA43B37C521 /* Pods-TimeTableProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
