@@ -11,7 +11,6 @@
 		AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */; };
 		AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */; };
 		AF0EB768220ABDC500DFAFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB766220ABDC500DFAFC0 /* Main.storyboard */; };
-		AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */; };
 		AF0EB76D220ABDC600DFAFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */; };
 		AF0EB770220ABDC600DFAFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0EB76E220ABDC600DFAFC0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 		AF0EB762220ABDC500DFAFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF0EB764220ABDC500DFAFC0 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		AF0EB767220ABDC500DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF0EB76A220ABDC500DFAFC0 /* TimeTableProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeTableProject.xcdatamodel; sourceTree = "<group>"; };
 		AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0EB76F220ABDC600DFAFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0EB771220ABDC600DFAFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				AF0EB76C220ABDC600DFAFC0 /* Assets.xcassets */,
 				AF0EB76E220ABDC600DFAFC0 /* LaunchScreen.storyboard */,
 				AF0EB771220ABDC600DFAFC0 /* Info.plist */,
-				AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */,
 			);
 			path = TimeTableProject;
 			sourceTree = "<group>";
@@ -225,7 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0EB76B220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld in Sources */,
 				AF0EB765220ABDC500DFAFC0 /* TimeTableViewController.swift in Sources */,
 				AF0EB763220ABDC500DFAFC0 /* AppDelegate.swift in Sources */,
 			);
@@ -431,19 +427,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AF0EB769220ABDC500DFAFC0 /* TimeTableProject.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AF0EB76A220ABDC500DFAFC0 /* TimeTableProject.xcdatamodel */,
-			);
-			currentVersion = AF0EB76A220ABDC500DFAFC0 /* TimeTableProject.xcdatamodel */;
-			path = TimeTableProject.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AF0EB757220ABDC500DFAFC0 /* Project object */;
 }
